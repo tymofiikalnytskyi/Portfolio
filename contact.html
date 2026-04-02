@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Tymofii's Portfolio</title>
+    <meta name="description" content="Contact page for recruiters and hiring teams interested in Tymofii Kalnytskyi." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark">TK</span><span>Tymofii's Portfolio</span></a>
+        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <div class="nav-actions"><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button></div>
+      </div>
+    </header>
+    <main id="content">
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Contact</span>
+          <h1>Open to conversations where technical quality matters.</h1>
+          <p class="lead">
+            The fastest way to reach me for internship opportunities, project discussions, or early-career engineering roles.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container contact-grid">
+          <article class="contact-card reveal">
+            <h2>Direct Channels</h2>
+            <p>Email and profile links for direct outreach.</p>
+            <div class="social-links">
+              <a href="mailto:tymofiikalnytskyi@mail.adelphi.edu">tymofiikalnytskyi@mail.adelphi.edu</a>
+              <a href="https://www.linkedin.com/in/tym-kalnytskyi-15792721b/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/tymofiikalnytskyi" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="resume-section">
+              <h3>Best-fit outreach</h3>
+              <p>AI engineering internships, software engineering internships, early-career full-stack roles, and technical project conversations in New York or remote-friendly teams.</p>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <h2>Contact Form</h2>
+            <form data-contact-form>
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Recruiter or hiring manager" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@company.com" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" placeholder="Share the role, team, or opportunity details."></textarea>
+              </label>
+              <button class="button" type="submit">Send Inquiry</button>
+              <p data-form-status aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-minimal">
+        <small>&copy; <span data-year></span> Tymofii Kalnytskyi</small>
+      </div>
+    </footer>
+  </body>
+</html>

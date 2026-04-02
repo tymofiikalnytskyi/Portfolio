@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Tymofii's Portfolio</title>
+    <meta name="description" content="Resume highlights for Tymofii Kalnytskyi, including education, technical skills, projects, and professional experience." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="resume">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark">TK</span><span>Tymofii's Portfolio</span></a>
+        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html" aria-current="page">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions"><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button></div>
+      </div>
+    </header>
+    <main id="content">
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Resume</span>
+          <h1>A clear summary aligned to the actual resume.</h1>
+          <p class="lead">
+            Education, technical skills, project experience, and a direct resume download, all in one place.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container resume-grid">
+          <article class="panel resume-sheet reveal">
+            <div class="panel-inner">
+              <div class="resume-section">
+                <h2>Tymofii Kalnytskyi</h2>
+                <p>New York, NY | 347-841-4601 | tymofiikalnytskyi@mail.adelphi.edu | AI Engineer / Software Engineer candidate</p>
+              </div>
+              <div class="resume-section">
+                <h3>Summary</h3>
+                <p>
+                  Computer Science & Artificial Intelligence student at Adelphi University with a 3.9 GPA, hands-on
+                  experience building AI products, static analysis tooling, and polished web interfaces, plus internship
+                  experience spanning software instruction, product pitching, and full-stack development.
+                </p>
+              </div>
+              <div class="resume-section">
+                <h3>Education</h3>
+                <ul class="list-clean">
+                  <li>Adelphi University, Garden City, NY</li>
+                  <li>B.S. Computer Science & Artificial Intelligence, Graduation Spring 2028</li>
+                  <li>GPA: 3.9 / 4.0, Dean's List</li>
+                  <li>Coursework: Data Structures & Algorithms, Operating Systems, Database Management, Statistics & Data Analytics, Multivariable Mathematics</li>
+                </ul>
+              </div>
+              <div class="resume-section">
+                <h3>Technical Skills</h3>
+                <p>Python, Java, C, C++, JavaScript, TypeScript, SQL, R, HTML5, CSS3, LLMs, NLP, Scikit-learn, Logistic Regression, Ollama, FastAPI, React, Next.js, Node.js, Flask, PostgreSQL, Docker, Git, Linux, Figma, Adobe Creative Suite.</p>
+              </div>
+              <div class="resume-section">
+                <h3>Experience Highlights</h3>
+                <ul class="list-clean">
+                  <li>The Knowledge House, Software Technical Assistant: taught AI, React, JavaScript, HTML, and CSS while mentoring 20+ students.</li>
+                  <li>The Knowledge House, Software Developer Intern: completed 100+ hours of project-based training and pitched product prototypes to 25+ funders.</li>
+                  <li>ITGenio Coding School, Software Engineering Intern: built full-stack applications and educational games across Python, SQL, JavaScript, C++, and Java.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <aside class="panel reveal">
+            <div class="panel-inner">
+              <h3>Resume Actions</h3>
+              <p>
+                Your current resume file is included below. You can keep the `.docx` link or later add a PDF export for
+                a cleaner recruiter download experience.
+              </p>
+              <div class="cta-row">
+                <a class="button" href="assets/Tymofii%20Kalnytskyi%20Resume.docx">Download Resume</a>
+                <a class="button-secondary" href="mailto:tymofiikalnytskyi@mail.adelphi.edu">Email Directly</a>
+              </div>
+              <div class="resume-section">
+                <h3>Professional Links</h3>
+                <ul class="list-clean">
+                  <li><a href="mailto:tymofiikalnytskyi@mail.adelphi.edu">tymofiikalnytskyi@mail.adelphi.edu</a></li>
+                  <li><a href="https://www.linkedin.com/in/tym-kalnytskyi-15792721b/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                  <li><a href="https://github.com/tymofiikalnytskyi" target="_blank" rel="noreferrer">github.com/tymofiikalnytskyi</a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Resume Highlights</span>
+              <h2>Filter the strongest signals by area.</h2>
+            </div>
+          </div>
+          <div class="resume-highlights reveal" data-filter-group>
+            <div class="tab-controls" role="group" aria-label="Resume highlight filters">
+              <button class="tab-button is-active" type="button" data-filter-button="all">All</button>
+              <button class="tab-button" type="button" data-filter-button="ai">AI</button>
+              <button class="tab-button" type="button" data-filter-button="fullstack">Full Stack</button>
+              <button class="tab-button" type="button" data-filter-button="ml">ML</button>
+              <button class="tab-button" type="button" data-filter-button="teaching">Teaching</button>
+              <button class="tab-button" type="button" data-filter-button="backend">Backend</button>
+            </div>
+            <div class="grid-3">
+              <article class="stat-card filter-card" data-filter-item="ai fullstack backend">
+                <strong>MemoryChat</strong>
+                <p>Built a full-stack AI chatbot with local LLM inference, stateless multi-turn memory, and a polished custom interface.</p>
+              </article>
+              <article class="stat-card filter-card" data-filter-item="ai ml backend">
+                <strong>AI Bug Finder</strong>
+                <p>Combined AST-based static analysis with Logistic Regression severity scoring inside a modular FastAPI backend.</p>
+              </article>
+              <article class="stat-card filter-card" data-filter-item="teaching fullstack">
+                <strong>The Knowledge House</strong>
+                <p>Taught AI, React, JavaScript, HTML, and CSS while mentoring 20+ students through debugging and project work.</p>
+              </article>
+              <article class="stat-card filter-card" data-filter-item="backend fullstack">
+                <strong>ITGenio</strong>
+                <p>Built full-stack applications using Python, SQL, JavaScript, C++, and Java across real project lifecycles.</p>
+              </article>
+              <article class="stat-card filter-card" data-filter-item="ml ai">
+                <strong>Machine Learning</strong>
+                <p>Hands-on experience with Scikit-learn, Logistic Regression, NLP-adjacent workflows, and feature-oriented problem framing.</p>
+              </article>
+              <article class="stat-card filter-card" data-filter-item="fullstack backend teaching">
+                <strong>Execution Range</strong>
+                <p>Comfortable moving between product interfaces, API structure, backend logic, and teaching technical concepts clearly.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-minimal">
+        <small>&copy; <span data-year></span> Tymofii Kalnytskyi</small>
+      </div>
+    </footer>
+  </body>
+</html>

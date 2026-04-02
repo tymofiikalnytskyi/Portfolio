@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Tymofii Portfolio</title>
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c36ff" />
+      <stop offset="100%" stop-color="#ff6b3d" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#10131a" />
+  <rect x="10" y="10" width="108" height="108" rx="22" fill="url(#g)" opacity="0.18" />
+  <path d="M28 38h72v10H70v42H58V48H28z" fill="#f6f7fb" />
+  <path d="M72 38h28l-20 24 20 28H87L72 68z" fill="#f6f7fb" />
+</svg>

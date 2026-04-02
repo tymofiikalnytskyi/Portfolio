@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tymofii's Portfolio | AI Engineer & Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tymofii Kalnytskyi, an Adelphi University Computer Science and Artificial Intelligence student building AI products, full-stack apps, and polished technical experiences."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TK</span>
+          <span>Tymofii's Portfolio</span>
+        </a>
+        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="container hero-layout">
+          <article class="hero-card hero-copy reveal">
+            <span class="eyebrow">Personal Portfolio</span>
+            <h1>AI engineering ambition backed by strong software fundamentals.</h1>
+            <p class="lead">
+              I’m Tymofii Kalnytskyi, a Computer Science & Artificial Intelligence student at Adelphi University with a
+              3.9 GPA, building full-stack AI products, developer tools, and polished interfaces. My work combines
+              technical depth, clean execution, and a strong focus on real product quality.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="projects.html">Explore Featured Work</a>
+              <a class="button-secondary" href="resume.html">View Resume Highlights</a>
+            </div>
+            <div class="hero-metrics chip-row">
+              <div class="metric">
+                <strong>3.9 GPA</strong>
+                <span>Computer Science & Artificial Intelligence</span>
+              </div>
+              <div class="metric">
+                <strong>20+ Students</strong>
+                <span>Mentored in AI and web development</span>
+              </div>
+              <div class="metric">
+                <strong>100+ Hours</strong>
+                <span>Project-based fellowship training</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="hero-card hero-visual reveal" data-reactive>
+            <div class="orbital"></div>
+            <div class="hero-diagram">
+              <div class="diagram-node">
+                <small>Current Focus</small>
+                <h3>Applied AI projects, strong software fundamentals, and clear communication</h3>
+                <p>LLMs, FastAPI services, Next.js applications, disciplined REST design, and work shaped to feel both technical and polished.</p>
+              </div>
+              <div class="grid-2">
+                <div class="diagram-node">
+                  <small>Direction</small>
+                  <p>Focused on AI Engineer, Software Engineer, and full-stack internship opportunities.</p>
+                </div>
+                <div class="diagram-node">
+                  <small>Approach</small>
+                  <p>Projects, skills, and experience presented with clarity, structure, and technical intent.</p>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Next.js</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Frontend Craft</span>
+              </div>
+              <div class="interactive-stack" data-tabs>
+                <div class="tab-controls" role="tablist" aria-label="Focus lens">
+                  <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab-button="lens-ai">AI</button>
+                  <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="lens-systems">Systems</button>
+                  <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="lens-product">Product</button>
+                </div>
+                <div class="tab-panel is-active" role="tabpanel" data-tab-panel="lens-ai">
+                  <strong>AI Lens</strong>
+                  <p>Built around local inference, ML-assisted tooling, and practical AI workflows that prioritize usable engineering over novelty alone.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" hidden data-tab-panel="lens-systems">
+                  <strong>Systems Lens</strong>
+                  <p>Strong attention to application structure, REST design, data modeling, and implementations that stay understandable as they grow.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" hidden data-tab-panel="lens-product">
+                  <strong>Product Lens</strong>
+                  <p>Interfaces are treated as part of the engineering work, with custom UI systems, motion, and hierarchy used to make technical depth feel approachable.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="feature-showcase section-surface">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Selected Work</span>
+              <h2>Projects selected to show technical range, product sense, and execution quality.</h2>
+            </div>
+            <a class="button-ghost" href="projects.html">See all projects</a>
+          </div>
+          <div class="grid-3">
+            <article class="project-card reveal" data-spotlight-button="spotlight-memorychat" data-reactive>
+              <div class="card-visual"></div>
+              <span class="pill">AI Product</span>
+              <h3>MemoryChat</h3>
+              <p>
+                A full-stack chatbot experience built around locally hosted inference, multi-turn memory, and a custom
+                interaction layer designed to feel fast, readable, and production-minded.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Next.js</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">LLM</span>
+              </div>
+            </article>
+            <article class="project-card reveal" data-spotlight-button="spotlight-bugfinder" data-reactive>
+              <div class="card-visual"></div>
+              <span class="pill">AI Engineering</span>
+              <h3>AI Bug Finder</h3>
+              <p>
+                A code intelligence tool that combines AST-based static analysis with machine learning to detect risky
+                Python patterns and prioritize issues by likely severity.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Scikit-learn</span>
+              </div>
+            </article>
+            <article class="project-card reveal" data-spotlight-button="spotlight-circuitracer" data-reactive>
+              <div class="card-visual"></div>
+              <span class="pill">Database Systems</span>
+              <h3>CircuitRacer Data Model</h3>
+              <p>
+                Designed and iterated a Formula-1-inspired relational schema, incorporating instructor feedback around
+                derived attributes, relationship paths, and composite-key correctness.
+              </p>
+              <div class="chip-row">
+                <span class="chip">SQL</span>
+                <span class="chip">ERD</span>
+                <span class="chip">Data Modeling</span>
+              </div>
+            </article>
+          </div>
+          <div class="panel spotlight-panel reveal" data-tabs>
+            <div class="panel-inner">
+              <div class="section-head">
+                <div>
+                  <span class="eyebrow">Project Spotlight</span>
+                  <h2>Switch between projects to see what each one proves.</h2>
+                </div>
+              </div>
+              <div class="tab-controls" role="tablist" aria-label="Project spotlight">
+                <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab-button="spotlight-memorychat">MemoryChat</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="spotlight-bugfinder">AI Bug Finder</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="spotlight-circuitracer">CircuitRacer</button>
+              </div>
+              <div class="tab-panel is-active" role="tabpanel" data-tab-panel="spotlight-memorychat">
+                <strong>What it proves</strong>
+                <p>MemoryChat shows that I can build AI products as systems, not just demos: local model integration, conversation state decisions, TypeScript architecture, and a custom interface that feels intentional.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="spotlight-bugfinder">
+                <strong>What it proves</strong>
+                <p>AI Bug Finder highlights a more tooling-oriented side of my work, combining AST parsing, issue detection, ML-based prioritization, and API design into a practical engineering workflow.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="spotlight-circuitracer">
+                <strong>What it proves</strong>
+                <p>CircuitRacer adds a data-modeling dimension to the portfolio by showing normalization, entity design, and the ability to improve a schema after structured technical feedback.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-surface">
+        <div class="container grid-2">
+          <article class="panel reveal">
+            <div class="panel-inner">
+              <span class="eyebrow">Technical Toolkit</span>
+              <h2>Tools and systems I use to build end-to-end work.</h2>
+              <ul class="stack-list">
+                <li>Languages: Python, Java, C, C++, JavaScript, TypeScript, SQL, R, HTML5, CSS3</li>
+                <li>AI and ML: LLMs, NLP, Scikit-learn, Logistic Regression, feature engineering, Ollama, FastAPI</li>
+                <li>Full-stack tools: React, Next.js, Node.js, Flask, PostgreSQL, Docker, Git, Linux</li>
+                <li>Design and delivery: Figma, Adobe Creative Suite, responsive UI systems, and REST APIs</li>
+              </ul>
+            </div>
+          </article>
+          <article class="panel reveal">
+            <div class="panel-inner">
+              <span class="eyebrow">Current Direction</span>
+              <h2>Focused on AI, product engineering, and clear execution.</h2>
+              <p>
+                I’m most interested in building practical AI products, strong application backends, and interfaces that
+                feel as intentional as the systems behind them.
+              </p>
+              <p>
+                The through-line across my work is simple: make the technical core strong, make the product experience
+                clear, and make the final result feel finished.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-accent-band">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Experience</span>
+              <h2>Recent experience that shaped how I build and communicate.</h2>
+            </div>
+          </div>
+          <div class="grid-4">
+            <article class="stat-card reveal">
+              <strong>The Knowledge House</strong>
+              <p>Delivered instruction in AI, React, JavaScript, HTML, and CSS while mentoring 20+ students.</p>
+            </article>
+            <article class="stat-card reveal">
+              <strong>Software Fellowship</strong>
+              <p>Completed 100+ hours of project-based instruction and presented product ideas to 25+ funders.</p>
+            </article>
+            <article class="stat-card reveal">
+              <strong>ITGenio</strong>
+              <p>Built full-stack applications and educational games across Python, SQL, JavaScript, C++, and Java.</p>
+            </article>
+            <article class="stat-card reveal">
+              <strong>Execution Style</strong>
+              <p>Moves comfortably between teaching, product thinking, implementation, and systems-level problem solving.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-surface">
+        <div class="container grid-2">
+          <article class="panel reveal">
+            <div class="panel-inner">
+              <span class="eyebrow">About</span>
+              <h2>More on how I think, learn, and approach engineering work.</h2>
+              <p>
+                Beyond the projects themselves, I care about clarity, fast iteration, and building things that feel
+                complete. The about page goes deeper into the mindset behind the work.
+              </p>
+              <a class="button-secondary" href="about.html">Read About Me</a>
+            </div>
+          </article>
+          <article class="panel reveal">
+            <div class="panel-inner">
+              <span class="eyebrow">Contact</span>
+              <h2>Open to internship and early-career engineering opportunities.</h2>
+              <p>
+                I’m interested in internships and early-career AI Engineer or Software Engineer roles where strong
+                implementation quality, product thinking, and technical rigor all matter.
+              </p>
+              <div class="cta-row">
+                <a class="button" href="contact.html">Start a conversation</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-minimal">
+        <small>&copy; <span data-year></span> Tymofii Kalnytskyi</small>
+      </div>
+    </footer>
+  </body>
+</html>

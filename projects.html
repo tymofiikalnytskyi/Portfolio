@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Tymofii's Portfolio</title>
+    <meta name="description" content="Projects by Tymofii Kalnytskyi spanning AI products, machine learning tooling, and database design." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="projects">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span class="brand-mark">TK</span><span>Tymofii's Portfolio</span></a>
+        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions"><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button></div>
+      </div>
+    </header>
+    <main id="content">
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Portfolio</span>
+          <h1>Projects that show applied AI, product sense, and engineering range.</h1>
+          <p class="lead">
+            This portfolio now centers on the work listed on my resume, with one additional database systems project to
+            show modeling depth beyond AI application work.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container timeline">
+          <article class="timeline-item reveal">
+            <header>
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="pill">Featured Real Project</span>
+                <h2>MemoryChat</h2>
+                <p>Next.js, React, TypeScript, Node.js, local LLM integration, and stateless REST conversation design.</p>
+              </div>
+            </header>
+            <div class="case-tabs" data-tabs>
+              <div class="tab-controls" role="tablist" aria-label="MemoryChat breakdown">
+                <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab-button="memory-problem">Problem</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="memory-architecture">Architecture</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="memory-impact">Impact</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="memory-stack">Stack</button>
+              </div>
+              <div class="tab-panel is-active" role="tabpanel" data-tab-panel="memory-problem">
+                <h3>Product Goal</h3>
+                <p>MemoryChat was built to answer a practical AI product question: how do you create a conversational experience that feels smart, responsive, and context-aware without depending on paid API calls or a bloated front-end stack.</p>
+                <p>Instead of treating the chatbot as a demo wrapper around a model, I approached it like a real product surface with architecture, state handling, and interaction quality all carrying equal weight.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="memory-architecture">
+                <h3>Architecture</h3>
+                <p>The application uses Next.js, React, TypeScript, and Node.js, with a locally hosted LLM through Ollama. One of the key design decisions was a stateless memory approach: instead of relying on server-side session persistence, the client sends full conversation history with each request so the model can respond with multi-turn context while the system stays simpler to reason about.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="memory-impact">
+                <h3>Impact</h3>
+                <p>On the interface side, I built a custom design system rather than depending on external component libraries. The result was a responsive, animated chat UI with controlled spacing, visual rhythm, and interaction feedback that made the product feel intentional rather than generic.</p>
+                <ul class="list-clean">
+                  <li>Real-time conversational UX with cleaner message flow and better readability</li>
+                  <li>Custom CSS variable system and keyframe-based motion without a third-party UI kit</li>
+                  <li>Component structure designed to keep the codebase maintainable as features expand</li>
+                </ul>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="memory-stack">
+                <h3>Stack</h3>
+                <p>MemoryChat combines front-end product quality with local AI integration, which makes the stack choice central to the project’s identity.</p>
+                <div class="pill-row">
+                  <span class="pill">Next.js</span>
+                  <span class="pill">React</span>
+                  <span class="pill">TypeScript</span>
+                  <span class="pill">Node.js</span>
+                  <span class="pill">Ollama</span>
+                  <span class="pill">REST API</span>
+                  <span class="pill">Custom CSS</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <header>
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="pill">Real Project</span>
+                <h2>AI Bug Finder</h2>
+                <p>Python AST analysis, Logistic Regression severity estimation, and a modular FastAPI backend.</p>
+              </div>
+            </header>
+            <div class="case-tabs" data-tabs>
+              <div class="tab-controls" role="tablist" aria-label="AI Bug Finder breakdown">
+                <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab-button="bug-problem">Problem</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="bug-architecture">Architecture</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="bug-impact">Impact</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="bug-stack">Stack</button>
+              </div>
+              <div class="tab-panel is-active" role="tabpanel" data-tab-panel="bug-problem">
+                <h3>Core Idea</h3>
+                <p>AI Bug Finder started with a useful engineering problem: static analysis tools often catch issues, but they do not always help developers understand which findings deserve attention first. I wanted a system that could both detect risky Python patterns and rank them more intelligently.</p>
+                <p>The project combines deterministic analysis with machine learning rather than treating those as separate systems.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="bug-architecture">
+                <h3>Architecture</h3>
+                <p>I built rule-based checks on top of Python AST parsing to detect undefined variables, bare exceptions, and unsafe default arguments. Using AST-level logic kept the detection process more structured and reliable than surface-level string matching.</p>
+                <ul class="list-clean">
+                  <li>AST-driven parsing for structural analysis of Python code</li>
+                  <li>Focused checks for real bug-prone patterns that affect maintainability and safety</li>
+                  <li>Clear separation between detection logic and downstream scoring</li>
+                </ul>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="bug-impact">
+                <h3>Impact</h3>
+                <p>To make the results more actionable, I trained a Logistic Regression classifier to estimate issue severity. That layer made the project more than a linter: it became an example of an engineering tool that uses ML to prioritize attention inside a practical workflow.</p>
+                <p>The backend was organized with FastAPI and a modular structure that cleanly separated rule-based analysis from model inference, which makes the system easier to maintain, test, and extend.</p>
+              </div>
+              <div class="tab-panel" role="tabpanel" hidden data-tab-panel="bug-stack">
+                <h3>Stack</h3>
+                <p>AI Bug Finder is built like an engineering utility: strong parsing foundations, ML-assisted prioritization, and a backend designed to stay modular as checks expand.</p>
+                <div class="pill-row">
+                  <span class="pill">Python</span>
+                  <span class="pill">FastAPI</span>
+                  <span class="pill">Scikit-learn</span>
+                  <span class="pill">AST Parsing</span>
+                  <span class="pill">ML Pipelines</span>
+                  <span class="pill">Logistic Regression</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <header>
+              <span class="timeline-dot"></span>
+              <div>
+                <span class="pill">Supporting Project</span>
+                <h2>CircuitRacer Relational Database Design</h2>
+                <p>SQL schema, ERD revision, entity design, cardinality correction, and technical iteration.</p>
+              </div>
+            </header>
+            <div class="panel">
+              <div class="panel-inner">
+                <p>
+                  CircuitRacer remains a strong supporting project because it shows that my engineering range includes
+                  structured database design, normalization, and incorporating formal technical feedback into a better
+                  final system.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-minimal">
+        <small>&copy; <span data-year></span> Tymofii Kalnytskyi</small>
+      </div>
+    </footer>
+  </body>
+</html>
