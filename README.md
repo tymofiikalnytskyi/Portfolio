@@ -1,6 +1,6 @@
 # Tymofii's Portfolio
 
-Personal portfolio website for Tymofii Kalnytskyi, built to present AI engineering, software engineering, and full-stack project work in a polished recruiter-facing format.
+Personal portfolio website for Tymofii Kalnytskyi, built to present AI engineering, software engineering, and full-stack project work.
 
 ## Live Site
 
